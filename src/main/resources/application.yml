@@ -22,9 +22,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5332/sahelcode
+    url: postgresql://postgres:1dg3gG2BF65DD-bCEFB*gd2ba15f4A-C@viaduct.proxy.rlwy.net:46178/railway
     username: sahelcode  # Use 'username' instead of 'user'
-    password: password
+    password: 1dg3gG2BF65DD-bCEFB*gd2ba15f4A-C
   jpa:
     hibernate:
       ddl-auto: create-drop
