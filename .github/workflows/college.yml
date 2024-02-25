@@ -1,12 +1,12 @@
 name: College application workflow
 on:
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
     paths:
       - 'src/**'
       - '.github/workflows/app-workflow.yaml'
   push:
-    branches: [ master ]
+    branches: [ main ]
     paths:
       - 'src/**'
       - '.github/workflows/app-workflow.yaml'
