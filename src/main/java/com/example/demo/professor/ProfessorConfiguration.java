@@ -13,6 +13,7 @@ public class ProfessorConfiguration {
 			professorRepository.save(new Professor("Salim", "sal@gmail.com", "Pr"));
 			professorRepository.save(new Professor("Khadija", "khadija@gmail.com", "M.C"));
 			professorRepository.save(new Professor("Adel", "ad@gmail.com", "Pr"));
+			professorRepository.save(new Professor("Badr", "bdr@gmail.com", "P.A"));
 		};
 	}
 
