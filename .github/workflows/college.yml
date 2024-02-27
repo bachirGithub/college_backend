@@ -26,18 +26,18 @@ jobs:
       # - name: Publish image to docker hub
       #   run: docker push integrationninjas/springboot-example:latest
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Install Railway CLI
-        run: npm i -g @railway/cli
-      # - name: Build Spring Boot Application
-      #   run: mvn clean package
-      - name: Deploy to Railway
-        run: railway up
-        env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+  # deploy:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Install Railway CLI
+  #       run: npm i -g @railway/cli
+  #     # - name: Build Spring Boot Application
+  #     #   run: mvn clean package
+  #     - name: Deploy to Railway
+  #       run: railway up
+  #       env:
+  #         RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
   #     - name: Pull Image from docker hub
   #       run: docker pull integrationninjas/springboot-example:latest
   #     - name: Delete old container
